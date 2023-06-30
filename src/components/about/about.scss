@@ -1,0 +1,156 @@
+.about {
+  &__inner {
+  }
+
+  &__title {
+    color: $black;
+    font-size: 50px;
+    font-family: Manrope;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 43px;
+    margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 500;
+    line-height: 160%;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__yandex-img {
+    // max-width: 329px;
+  }
+}
+.about--main {
+  margin-top: 116px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.about--services {
+  margin-top: 456px;
+
+  @media (max-width: 768px) {
+    margin-top: 220px;
+  }
+}
+
+.cards-about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: $light2-gray;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 470px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__card {
+    background: $white;
+    padding: 0 30px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+    @media (max-width: 560px) {
+      padding: 10px;
+    }
+  }
+
+  &__card-link {
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &:hover .cards-about__img {
+      // box-shadow: 0 0 4px 0px rgba($black, 0.5);
+      box-shadow: 0 0 4px 0px $gray;
+    }
+  }
+
+  &__card--1,
+  &__card--2,
+  &__card--3 {
+    padding-bottom: 30px;
+  }
+
+  &__card--4,
+  &__card--5,
+  &__card--6 {
+    padding-top: 30px;
+  }
+
+  &__card--1,
+  &__card--2 {
+    @media (max-width: 768px) {
+      padding-top: 0;
+    }
+  }
+
+  &__card--5,
+  &__card--6 {
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    border-radius: 40px;
+    transition: 0.3s;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

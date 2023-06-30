@@ -1,0 +1,143 @@
+.hero {
+  padding: 571px 0 106px;
+  // background: url('../img/hero-bg.png');
+  background: url('../img/hero-bg.png') no-repeat center / cover;
+  position: relative;
+  border-radius: 0px 0px 60px 60px;
+
+  &.services {
+    background-image: url(../img/hero-bg-2.png);
+  }
+
+  @media (max-width: 768px) {
+    padding: 250px 0 106px;
+  }
+  @media (max-width: 560px) {
+    padding: 150px 0 106px;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    color: $white;
+    max-width: 517px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 50px;
+      text-shadow: 0 0 5px rgba($black, 1);
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: $white;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.2;
+      text-shadow: 0 0 5px rgba($black, 1);
+    }
+  }
+}
+
+// form=================================================================
+@import '../../components/form/form';
+
+// advantages=======================================================================
+@import '../../components/advantages/advantages';
+
+// about================================================================================
+@import '../../components/about/about';
+
+// faq=======================================================================
+@import '../../components/faq/faq';
+
+// clients==========================================================================
+.clients {
+  margin-top: 440px;
+
+  @media (max-width: 768px) {
+    margin-top: 200px;
+  }
+  @media (max-width: 505px) {
+    margin-top: 230px;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: $light2-gray;
+    outline: 10px solid #fff;
+    outline-offset: -10px;
+
+    @media (max-width: 830px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+      outline: 5px solid #fff;
+      outline-offset: -5px;
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__box-item {
+    max-width: 200px;
+    padding: 10px;
+    background: $white;
+
+    @media (max-width: 830px) {
+      padding: 10px;
+    }
+    @media (max-width: 600px) {
+      padding: 5px;
+    }
+  }
+
+  // &__box-item--1,
+  // &__box-item--2,
+  // &__box-item--3,
+  // &__box-item--4,
+  // &__box-item--5,
+  // &__box-item--6 {
+  //   padding-top: 0;
+  // }
+
+  // &__box-item--7,
+  // &__box-item--8,
+  // &__box-item--9,
+  // &__box-item--10,
+  // &__box-item--11,
+  // &__box-item--12 {
+  //   padding-bottom: 0;
+  // }
+
+  &__img {
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@import '../../components/contacts/contacts';

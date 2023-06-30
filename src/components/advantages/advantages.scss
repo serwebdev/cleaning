@@ -1,0 +1,143 @@
+.advantages {
+  &.main {
+    margin-top: 166px;
+
+    @media (max-width: 550px) {
+      margin-top: 300px;
+    }
+  }
+  &.services {
+    margin-top: 80px;
+
+    @media (max-width: 550px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+    }
+  }
+
+  &__card {
+    flex: 0 1 33.33%;
+    padding: 0 30px;
+
+    @media (max-width: 768px) {
+      flex: 0 1 50%;
+      padding: 20px;
+    }
+
+    @media (max-width: 450px) {
+      flex: 0 1 100%;
+      border: none;
+      border-bottom: 1px solid $light2-gray;
+      padding: 20px 0;
+    }
+  }
+
+  &__card--1,
+  &__card--2,
+  &__card--4,
+  &__card--5 {
+    border-right: 1px solid $light2-gray;
+  }
+
+  &__card--4,
+  &__card--5 {
+    padding-top: 30px;
+  }
+
+  &__card--1,
+  &__card--2,
+  &__card--3 {
+    border-bottom: 1px solid $light2-gray;
+    padding-bottom: 30px;
+  }
+
+  &__card--6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.main {
+    .advantages__card--6 {
+      @media (max-width: 450px) {
+        display: none;
+      }
+    }
+  }
+
+  &__card--2,
+  &__card--4 {
+    @media (max-width: 768px) {
+      border-right: none;
+    }
+  }
+  &__card--3 {
+    @media (max-width: 768px) {
+      border-right: 1px solid $light2-gray;
+    }
+  }
+  &__card--4 {
+    @media (max-width: 768px) {
+      border-bottom: 1px solid $light2-gray;
+    }
+  }
+
+  &__img-wrap {
+    margin-bottom: 24px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      background: $green;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+  }
+
+  &__img {
+  }
+
+  &__title {
+    color: #000;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    @media (max-width: 768px) {
+      padding: 15px 15px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Общие стили
+@import './fonts';
+@import './variables';
+@import './reset';
+@import './global';
+
+// Компоненты
+/* @import '../components/services/services'; */
+
+// Header
+@import './header';
+
+// Страницы
+@import './pages-scss/index';
+@import './pages-scss/services';
+
+// Footer
+@import './footer';

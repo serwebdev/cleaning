@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="/" class="header__logo-wrap">
+                <img src="img/logo.svg" alt="Логотип" class="header__logo">
+            </a>
+            <div class="header__place">
+                <svg class="header__place-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_31_8)">
+                        <path
+                            d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.657 16.6572L13.414 20.9002C13.039 21.2748 12.5306 21.4853 12.0005 21.4853C11.4704 21.4853 10.962 21.2748 10.587 20.9002L6.343 16.6572C5.22422 15.5384 4.46234 14.1129 4.15369 12.5611C3.84504 11.0092 4.00349 9.40071 4.60901 7.93893C5.21452 6.47714 6.2399 5.22774 7.55548 4.3487C8.87107 3.46967 10.4178 3.00049 12 3.00049C13.5822 3.00049 15.1289 3.46967 16.4445 4.3487C17.7601 5.22774 18.7855 6.47714 19.391 7.93893C19.9965 9.40071 20.155 11.0092 19.8463 12.5611C19.5377 14.1129 18.7758 15.5384 17.657 16.6572Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_31_8">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <div class="dropdown-hover place-dropdown">
+                    <div class="dropdown-hover__top">
+                        <span class="dropdown-hover__top-text">Москва</span>
+
+                        <svg class="place-dropdown__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1L7 7L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <ul class="dropdown-hover__menu">
+                        <li class="dropdown-hover__menu-item active"><span>Москва</span></li>
+                        <li class="dropdown-hover__menu-item"><span>Самара</span></li>
+                        <li class="dropdown-hover__menu-item"><span>Казань</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="header__phone-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.9" clip-path="url(#clip0_4_686)">
+                        <path
+                            d="M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_4_686">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <a href="tel:88001234567" class="header__phone">8 800 123 45 67</a>
+            </div>
+            <button class="header__btn btn">Перезвоните мне</button>
+            <button class="header__burger"><span></span></button>
+
+        </div>
+        <div class="header__bottom">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span>Наши услуги</span>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="menu__list submenu">
+                            <li class="menu__item submenu__item">
+                                <a href="services.html" class="menu__link submenu__link">Генеральная</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Поддерживающая</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">После ремонта</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Мойка окон и витрин</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span>Бизнесу</span>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="menu__list submenu">
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Уборка офисов</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Уборка биpнес-центров</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Уборка магазинов</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">Уборка складов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span>Спец.Клининг</span>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="menu__list submenu">
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">После пожара</a>
+                            </li>
+                            <li class="menu__item submenu__item">
+                                <a href="#" class="menu__link submenu__link">После потопа</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+        <div class="hero services">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">Генеральная уборка квартиры</h1>
+                    <p class="hero__text">Закажите уборку за 1 минуту:</p>
+                </div>
+            </div>
+            <form class="form">
+    
+
+    
+    <div class="room">
+        <button type="button" class="room__btn room__btn--minus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_2146)">
+                    <path d="M5 12H19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_6_2146">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+        <div class="room__box">
+            <input type="text" class="room__input">
+            <span class="room__text">комнатная</span>
+        </div>
+        <button type="button" class="room__btn room__btn--plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_2142)">
+                    <path d="M12 5V19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M5 12H19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_6_2142">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </div>
+    
+
+    <input type="text" class="form__input" placeholder="Имя" required>
+    <input type="text" class="form__input form__input--phone" placeholder="7 (xxx) xxx xx xx" required>
+    <button class="form__btn btn">Рассчитать стоимость</button>
+</form>
+        </div>
+
+        <!-- general------------------------------------------------------ -->
+        <section class="general">
+            <div class="container">
+                <div class="general__inner">
+                    <h2 class="general__title h2">Что такое генеральная уборка?</h2>
+                    <div class="general__body">
+                        <p class="general__text">Чтобы в Вашу жизнь пришло что-то новое и желанное, нужно непременно
+                            избавиться от чего-то старого, занимающего пространство. В глобальном смысле фраза
+                            генеральная уборка может быть применима не только к уборке традиционной - мойке полов,
+                            протиранию пыли, чистке сантехнике. Генеральная уборка - это наведение порядка в шкафах,
+                            комнатах, сумочке, мобильном телефоне, заметках и даже в голове. <br><br>
+
+                            Ментально, россияне склонны к накопительству и хранению каких-либо вещей на всякий случай.
+                            Признайтесь честно, Вы сами наверняка не раз оставляли какую то вещь, которой давно не
+                            пользовались с мыслями о том, что она может еще пригодиться.
+                            <br><br>
+                            Недаром каждый знает что такое легендарные "антресоли" и настоящий русский балкон.
+                        </p>
+                        <p class="general__text">Психологи рекомендуют очищать пространство минимум 2 раза в год. А с
+                            ненужными мыслями и убеждениями стараться прощаться и того раньше.
+                            <br><br>
+                            И если в работе со вторым мы разбираемся только по-любительски, то полная комплексная ген.
+                            уборка любых помещений жилых или нежилых - наша профессиональная деятельность.
+                            <br><br>
+                            Выполняя профессиональную генеральную уборку - наши специалисты залезут в каждый уголок.
+                            Даже тот уголок, который давно зарос 3-сантиметровым слоем пыли. Отодвинем плиту, вымоем под
+                            кухней, за диваном и на высоченном шкафу. Очистим застарелые загрязнения которые казалось
+                            устранить невозможно.
+                            <br><br>
+                            А мы умеем! Это просто поразительно, как чисто становится после того, как клининговая
+                            компания "Азбука Клининга" проведет полную комплексную уборку!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contain -->
+        <section class="contain">
+            <div class="container">
+                <div class="contain__inner">
+                    <h2 class="contain__title h2">Что входит в услугу</h2>
+                    <div class="contain__body">
+                        <div class="contain__slider swiper">
+                            <div class="contain__slider-wrapper swiper-wrapper">
+                                <div class="contain__slider-slide swiper-slide">
+                                    <div class="contain__slider-card">
+                                        <img src="img/contain.jpg" alt="" class="contain__slider-img">
+                                        <div class="contain__slider-circle contain__slider-circle--1">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--2">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--3">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--4">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--5">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--6">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--7">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contain__slider-slide swiper-slide">
+                                    <div class="contain__slider-card">
+                                        <img src="img/contain.jpg" alt="" class="contain__slider-img">
+                                        <div class="contain__slider-circle contain__slider-circle--1">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--2">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--3">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--4">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--5">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--6">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--7">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_15)">
+                                    <path d="M34.8335 22H9.16683" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.5 29.3333L9.16667 22" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.5 14.6665L9.16667 21.9998" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_7_15">
+                                        <rect width="44" height="44" fill="white" transform="matrix(-1 0 0 1 44 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_10)">
+                                    <path d="M9.16699 22H34.8337" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.5 29.3333L34.8333 22" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.5 14.6665L34.8333 21.9998" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_7_10">
+                                        <rect width="44" height="44" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- advantages--------------------------------------------------- -->
+        <section class="advantages services">
+    <div class="container">
+        <div class="advantages__inner">
+            <div class="advantages__card advantages__card--1">
+                <div class="advantages__img-wrap">
+                    <img src="img/advantages-1.png" alt="Преимущества" class="advantages__img">
+                </div>
+                <h4 class="advantages__title">Опытный персонал</h4>
+                <p class="advantages__text">Мы делаем ставку на персонал - наши клинеры квалифицированные
+                    специалисты.</p>
+            </div>
+            <div class="advantages__card advantages__card--2">
+                <div class="advantages__img-wrap">
+                    <img src="img/advantages-2.png" alt="Преимущества" class="advantages__img">
+                </div>
+                <h4 class="advantages__title">Безупречная чистота</h4>
+                <p class="advantages__text">Сертифицированные чистящие средства, которые прошедшие проверку.</p>
+            </div>
+            <div class="advantages__card advantages__card--3">
+                <div class="advantages__img-wrap">
+                    <img src="img/advantages-3.png" alt="Преимущества" class="advantages__img">
+                </div>
+                <h4 class="advantages__title">Натуральные средства</h4>
+                <p class="advantages__text">Сертифицированные чистящие средства, которые прошедшие проверку.</p>
+            </div>
+            <div class="advantages__card advantages__card--4">
+                <div class="advantages__img-wrap">
+                    <img src="img/advantages-4.png" alt="Преимущества" class="advantages__img">
+                </div>
+                <h4 class="advantages__title">Современное оборудование</h4>
+                <p class="advantages__text">В работе используем только качественное клининговое оборудование.
+                </p>
+            </div>
+            <div class="advantages__card advantages__card--5">
+                <div class="advantages__img-wrap">
+                    <img src="img/advantages-5.png" alt="Преимущества" class="advantages__img">
+                </div>
+                <h4 class="advantages__title">Фиксированная стоимость</h4>
+                <p class="advantages__text">В процессе уборки цена не меняется, оплачивается заранее
+                    согласованная сумма.</p>
+            </div>
+            <div class="advantages__card advantages__card--6">
+                
+                <button class="advantages__btn btn">Рассчитать стоимость</button>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- faq--------------------------------------------------- -->
+        <section class="faq faq--main">
+    <div class="container">
+        <div class="faq__inner">
+            <h2 class="faq__title h2">Частые вопросы</h2>
+            <div class="faq__block">
+
+                <div class="faq__block-col">
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Выполняете ли вы заказы в частных домах, коттеджах,
+                                таунхаусах и на дачах?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости, нам
+                            потребуется
+                            некоторое время. Далеко-далеко за словесными горами в стране гласных и согласных живут
+                            рыбные тексты.</p>
+                    </div>
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Как оформить регулярную подписку на ваши услуги?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости, нам
+                            потребуется
+                            некоторое время.</p>
+                    </div>
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Вы уже делаете уборку квартир в Москве и
+                                Санкт-Петербурге.
+                                Когда появитесь в других городах?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах.</p>
+                    </div>
+                </div>
+
+                <div class="faq__block-col">
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Как работает «Приведи друга»? Сколько стоит уборка
+                                квартиры
+                                по этой акции?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости, нам
+                            потребуется
+                            некоторое время.</p>
+                    </div>
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Могу ли я заказать уборку квартиры и уйти по делам,
+                                когда
+                                приедет клинер?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах.</p>
+                    </div>
+                    <div class="faq__block-item">
+                        <div class="faq__block-question">
+                            <p class="faq__block-question-text">Вы сможете помыть потолки, жалюзи и всё, до чего сложно
+                                дотянуться?</p>
+                            <svg class="faq__block-question-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L7 7L1 1" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <p class="faq__block-answer">Цель, к которой наша компания постепенно идёт — оказывать свои
+                            услуги
+                            на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости, нам
+                            потребуется
+                            некоторое время.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="discount">
+    <div class="container">
+        <div class="discount__inner">
+            <h2 class="discount__title h2">Оставьте заявку и получите скидку 10% на следующую уборку</h2>
+            <form class="form">
+    
+
+    
+
+    <input type="text" class="form__input" placeholder="Имя" required>
+    <input type="text" class="form__input form__input--phone" placeholder="7 (xxx) xxx xx xx" required>
+    <button class="form__btn btn">Рассчитать стоимость</button>
+</form>
+        </div>
+    </div>
+</section>
+</section>
+
+        <!-- about--------------------------------------------------- -->
+        <section class="about about--services">
+    <div class="container">
+        <div class="about__inner">
+            <h2 class="about__title h2">О нас</h2>
+            <div class="about__top">
+                <p class="about__text">С другой стороны, реализация намеченных плановых заданий требует от нас анализа
+                    приоретизации разума над эмоциями. Таким образом, граница обучения кадров представляет собой
+                    интересный эксперимент проверки кластеризации усилий! Вот вам яркий пример современных тенденций —
+                    выбранный нами инновационный путь представляет собой интересный эксперимент проверки приоретизации
+                    разума над эмоциями.</p>
+                <img src="img/about-yandex.png" alt="Яндекс" class="about__yandex-img">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- contacts---------------------------------------------------------- -->
+        <section class="contacts services">
+    <div class="container">
+        <div class="contacts__inner">
+            <h2 class="contacts__title h2">Контакты</h2>
+            <!-- <div class="contacts__map"> -->
+            <div class="contacts__map" style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/16/yaroslavl/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Ярославль</a><a
+                    href="https://yandex.ru/maps/16/yaroslavl/house/ulitsa_kosmonavtov_11/Z0AYfwJpSkEBQFttfXp0dHlnZA==/?ll=39.959346%2C57.655540&utm_medium=mapframe&utm_source=maps&z=16.92"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Космонавтов, 11 —
+                    Яндекс Карты</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=39.959346%2C57.655540&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzkwNDk3MxJH0KDQvtGB0YHQuNGPLCDQr9GA0L7RgdC70LDQstC70YwsINGD0LvQuNGG0LAg0JrQvtGB0LzQvtC90LDQstGC0L7QsiwgMTEiCg1f1h9CFUafZkI%2C&z=16.92"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+            <!-- </div> -->
+            <div class="contacts__bottom">
+                <div class="contacts__col">
+                    <h5 class="contacts__col-title">Адресс</h5>
+                    <p class="contacts__col-text">150051, г. Ярославль, ул. Космонавтов 11</p>
+                </div>
+                <div class="contacts__col">
+                    <h5 class="contacts__col-title">Телефон</h5>
+                    <p class="contacts__col-text">8 800 123 45 67</p>
+                </div>
+                <div class="contacts__col">
+                    <h5 class="contacts__col-title">Почта</h5>
+                    <p class="contacts__col-text">hello@company.ru</p>
+                </div>
+                <div class="contacts__col">
+                    <h5 class="contacts__col-title">Время работы</h5>
+                    <p class="contacts__col-text">с 8 до 22 без выходных</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__body">
+                <div class="footer__col footer__col--1">
+                    <a href="/" class="footer__logo-link">
+                        <img src="img/logo.svg" alt="Логотип" class="footer__logo">
+                    </a>
+                    <p class="footer__text">Компания выполняет весь спектр уборочных работ после ремонта, строительства
+                        на любых площадях от квартир до крупных торговых центров и заводов</p>
+                </div>
+                <div class="footer__col footer__col--2">
+                    <h4 class="footer__col-title">Наши услуги</h4>
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="services.html" class="footer__menu-link">Генеральная</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Поддерживающая</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">После ремонта</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Мойка окон и витрин</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">После пожара</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">После потопа</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col footer__col--3">
+                    <h4 class="footer__col-title">Для бизнеса</h4>
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Уборка офисов</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Уборка бизнес-центров</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Уборка магазинов</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Уборка складов</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col footer__col--4">
+                    <h4 class="footer__col-title">Контакты</h4>
+                    <div class="footer__col-contacts">
+                        <a href="#">8 800 123 45 67</a>
+                        <a href="#">hello@companyname.ru</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_1509)">
+                                    <path
+                                        d="M14.5893 11.9228L14.5818 11.9853C12.7493 11.072 12.5576 10.9503 12.3209 11.3053C12.1568 11.5511 11.6784 12.1086 11.5343 12.2736C11.3884 12.4361 11.2434 12.4486 10.9959 12.3361C10.7459 12.2111 9.94345 11.9486 8.99345 11.0986C8.25345 10.4361 7.75678 9.62364 7.61011 9.37364C7.36595 8.95197 7.87678 8.89197 8.34178 8.01197C8.42511 7.83697 8.38261 7.69947 8.32095 7.5753C8.25845 7.4503 7.76095 6.2253 7.55261 5.73697C7.35261 5.2503 7.14678 5.31197 6.99261 5.31197C6.51261 5.2703 6.16178 5.27697 5.85261 5.59864C4.50761 7.07697 4.84678 8.60197 5.99761 10.2236C8.25928 13.1836 9.46428 13.7286 11.6676 14.4853C12.2626 14.6745 12.8051 14.6478 13.2343 14.5861C13.7126 14.5103 14.7068 13.9853 14.9143 13.3978C15.1268 12.8103 15.1268 12.3228 15.0643 12.2103C15.0026 12.0978 14.8393 12.0353 14.5893 11.9228Z"
+                                        fill="#727272" />
+                                    <path
+                                        d="M17.1 2.87453C10.6925 -3.31964 0.0883333 1.17286 0.0841667 9.91119C0.0841667 11.6579 0.541667 13.3612 1.41333 14.8654L0 20.0004L5.27917 18.6237C11.8667 22.182 19.9967 17.457 20 9.91619C20 7.26953 18.9667 4.77869 17.0875 2.90703L17.1 2.87453ZM18.335 9.88869C18.33 16.2495 11.3475 20.222 5.825 16.9754L5.525 16.797L2.4 17.6095L3.2375 14.572L3.03833 14.2595C-0.398333 8.78869 3.55 1.63869 10.06 1.63869C12.2717 1.63869 14.3475 2.50119 15.9108 4.06369C17.4733 5.61286 18.335 7.68869 18.335 9.88869Z"
+                                        fill="#727272" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_1509">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5958 10.857C16.2725 10.4487 16.365 10.267 16.5958 9.90199C16.6 9.89783 19.2692 6.20949 19.5442 4.95866L19.5458 4.95783C19.6825 4.50199 19.5458 4.16699 18.885 4.16699H16.6983C16.1417 4.16699 15.885 4.45449 15.7475 4.77616C15.7475 4.77616 14.6342 7.44116 13.0592 9.16866C12.5508 9.66783 12.3158 9.82783 12.0383 9.82783C11.9017 9.82783 11.6892 9.66783 11.6892 9.21199V4.95783C11.6892 4.41116 11.5333 4.16699 11.0725 4.16699H7.63417C7.285 4.16699 7.0775 4.42199 7.0775 4.65949C7.0775 5.17783 7.865 5.29699 7.94667 6.75533V9.91949C7.94667 10.6128 7.82083 10.7403 7.54167 10.7403C6.79833 10.7403 4.99417 8.06449 3.925 5.00199C3.70917 4.40783 3.49833 4.16783 2.9375 4.16783H0.75C0.125833 4.16783 0 4.45533 0 4.77699C0 5.34533 0.743333 8.17116 3.45667 11.9045C5.265 14.4528 7.81167 15.8337 10.1283 15.8337C11.5208 15.8337 11.6908 15.527 11.6908 14.9995C11.6908 12.5645 11.565 12.3345 12.2625 12.3345C12.5858 12.3345 13.1425 12.4945 14.4425 13.7237C15.9283 15.1812 16.1725 15.8337 17.0042 15.8337H19.1908C19.8142 15.8337 20.13 15.527 19.9483 14.922C19.5325 13.6495 16.7225 11.032 16.5958 10.857Z"
+                                    fill="#1BB999" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">© 2011-2023 Клининговая компания «&&&&»</div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

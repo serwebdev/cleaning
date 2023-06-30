@@ -1,0 +1,235 @@
+.form {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  background: $white;
+  padding: 20px;
+  max-width: 1200px;
+  position: absolute;
+  bottom: -46px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.13));
+
+  @media (max-width: 1050px) {
+    flex-wrap: wrap;
+    bottom: -100px;
+  }
+  @media (max-width: 550px) {
+    bottom: -250px;
+  }
+
+  &__input {
+    // max-width: 280px;
+    // flex-grow: 1;
+    flex: 1 1 23.3%;
+
+    // color: #C5C5C5;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 700;
+    color: $black;
+    padding: 14px 20px;
+
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    background: $white;
+
+    @media (max-width: 1050px) {
+      flex: 1 1 48%;
+    }
+    @media (max-width: 550px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__btn {
+    padding: 15px 39px;
+    white-space: nowrap;
+    position: static;
+    z-index: 0;
+
+    @media (max-width: 1050px) {
+      flex: 1 1 48%;
+    }
+    @media (max-width: 550px) {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+// dropdown================================================================
+.dropdown {
+  --transit: 0.15s;
+  --border: #d9d9d9;
+
+  //   margin: 50px;
+  //   max-width: 280px;
+  flex: 1 1 23.3%;
+
+  //   height: 52px;
+  position: relative;
+
+  color: $black;
+  font-size: 16px;
+  font-family: Manrope;
+  font-weight: 700;
+
+  @media (max-width: 1050px) {
+    flex: 1 1 48%;
+  }
+  @media (max-width: 550px) {
+    flex: 1 1 100%;
+  }
+}
+
+.dropdown__back {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: none;
+  z-index: -1;
+}
+
+.dropdown__back.show {
+  display: block;
+  z-index: 0;
+}
+
+.dropdown__btn {
+  border: 1px solid var(--border);
+  padding: 14px 35px 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+}
+
+.dropdown__btn::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  background: url(/img/form-arrow.svg) no-repeat center;
+  transform: rotate(180deg);
+  transition: var(--transit);
+}
+
+.dropdown__btn.show::after {
+  transform: rotate(0deg);
+}
+
+.dropdown__menu {
+  border-radius: 5px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: var(--transit);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  //   max-height: 156px;
+  //   box-shadow: 2px 3px 5px #0000004d;
+  z-index: 1;
+}
+
+.dropdown__menu.show {
+  transform: scaleY(100%);
+}
+
+.dropdown__list {
+  list-style: none;
+}
+
+.dropdown__item {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--border);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dropdown__item:last-child {
+  border-bottom: none;
+}
+
+.dropdown__item:hover {
+  background-color: gainsboro;
+}
+
+.dropdown__item.active {
+  background-color: rgb(238, 238, 238);
+}
+
+// room=============================================================
+.room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 1px solid $light2-gray;
+  background: #fff;
+
+  flex: 1 1 23.3%;
+
+  @media (max-width: 1050px) {
+    flex: 1 1 48%;
+  }
+  @media (max-width: 550px) {
+    flex: 1 1 100%;
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__btn--minus {
+  }
+
+  &__box {
+    color: $black;
+    text-align: center;
+    font-size: 16px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__input {
+    color: $black;
+    text-align: center;
+    font-size: 16px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 20px;
+    border: none;
+    // outline: 1px solid;
+  }
+
+  &__text {
+  }
+
+  &__btn--plus {
+  }
+}

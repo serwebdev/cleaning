@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+
+        <div class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">Клининговая компания в Москве</h1>
+                    <p class="hero__text">Клининговые услуги для компаний и людей</p>
+                </div>
+            </div>
+            @@include('components/form/form.html',{
+            dropdown:true,
+            })
+
+        </div>
+
+        <!-- advantages--------------------------------------------------- -->
+        @@include('components/advantages/advantages.html',{
+        advantagesClass:'main',
+        advantagesBtn: false,
+        })
+
+        <!-- about--------------------------------------------------- -->
+        @@include('components/about/about.html',{
+        mod:'main',
+        cards: true,
+        })
+
+        <!-- faq--------------------------------------------------- -->
+        @@include('components/faq/faq.html',{
+        mod:'main',
+        })
+
+        <!-- @@include('components/faq/faq.html' ,{
+        mod:'services',
+        }) -->
+
+        <!-- clients----------------------------------------------------- -->
+        <section class="clients">
+            <div class="container">
+                <div class="clients__inner">
+                    <h2 class="clients__title h2">Наши клиенты</h2>
+                    <div class="clients__box">
+                        <div class="clients__box-item clients__box-item--1">
+                            <img src="img/clients-1.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--2">
+                            <img src="img/clients-2.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--3">
+                            <img src="img/clients-3.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--4">
+                            <img src="img/clients-4.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--5">
+                            <img src="img/clients-5.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--6">
+                            <img src="img/clients-6.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--7">
+                            <img src="img/clients-7.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--8">
+                            <img src="img/clients-8.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--9">
+                            <img src="img/clients-9.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--10">
+                            <img src="img/clients-10.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--11">
+                            <img src="img/clients-11.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                        <div class="clients__box-item clients__box-item--12">
+                            <img src="img/clients-12.svg" alt="Логотипы клиентов" class="clients__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacts---------------------------------------------------------- -->
+        @@include('components/contacts/contacts.html',{
+        class:'main',
+        })
+
+
+        @@include('_footer.html')
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

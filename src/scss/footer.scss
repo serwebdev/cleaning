@@ -1,0 +1,193 @@
+.footer {
+  background: #0f0f0f;
+
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  &__inner {
+    padding-top: 60px;
+
+    @media (max-width: 768px) {
+      padding-top: 40px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+    @media (max-width: 1150px) {
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      gap: 10px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__col {
+    @media (max-width: 950px) {
+      width: calc(50% - 10px);
+    }
+  }
+
+  &__col--1 {
+    max-width: 260px;
+  }
+
+  &__logo-link {
+    margin-bottom: 15px;
+    display: block;
+    max-width: 220px;
+  }
+
+  &__logo {
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 14px;
+    font-family: Manrope;
+    font-weight: 500;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  &__col--2 {
+    margin-left: -70px;
+
+    @media (max-width: 1150px) {
+      margin-left: 0;
+    }
+  }
+
+  &__col-title {
+    color: $white;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+    color: $gray;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 200%;
+    transition: 0.2s;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__col--3 {
+  }
+
+  &__col--4 {
+    margin-right: 64px;
+
+    @media (max-width: 1150px) {
+      margin-right: 0;
+    }
+  }
+
+  &__col-contacts {
+    color: $white;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 160%;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    a {
+      display: block;
+      transition: 0.2s;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 400px) {
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__social-link {
+    svg {
+      &:hover path {
+        fill: $green;
+      }
+
+      path {
+        fill: #727272;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &__copyright {
+    color: $gray;
+    text-align: center;
+    font-size: 14px;
+    font-family: Manrope;
+    font-weight: 500;
+    padding: 16px 0;
+    border-top: 1px solid #222;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<form class="form">
+    @@if(context.dropdown){
+    <div class="dropdown">
+        <div class="dropdown__back"></div>
+        <div class="dropdown__btn">Уборка квартиры</div>
+        <div class="dropdown__menu">
+            <ul class="dropdown__list">
+
+                <li class="dropdown__item">Уборка офиса</li>
+                <li class="dropdown__item">Уборка магазина</li>
+                <li class="dropdown__item">Уборка после пожара</li>
+                <li class="dropdown__item">Уборка после потопа</li>
+                <li class="dropdown__item">Пункт 5</li>
+            </ul>
+        </div>
+    </div>
+    }
+
+    @@if(context.howManyRoom){
+    <div class="room">
+        <button type="button" class="room__btn room__btn--minus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_2146)">
+                    <path d="M5 12H19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_6_2146">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+        <div class="room__box">
+            <input type="text" class="room__input">
+            <span class="room__text">комнатная</span>
+        </div>
+        <button type="button" class="room__btn room__btn--plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_2142)">
+                    <path d="M12 5V19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M5 12H19" stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_6_2142">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </div>
+    }
+
+    <input type="text" class="form__input" placeholder="Имя" required>
+    <input type="text" class="form__input form__input--phone" placeholder="7 (xxx) xxx xx xx" required>
+    <button class="form__btn btn">Рассчитать стоимость</button>
+</form>

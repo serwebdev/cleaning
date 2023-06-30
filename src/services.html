@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html')
+
+        <div class="hero services">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">Генеральная уборка квартиры</h1>
+                    <p class="hero__text">Закажите уборку за 1 минуту:</p>
+                </div>
+            </div>
+            @@include('components/form/form.html',{
+            howManyRoom:true,
+            })
+        </div>
+
+        <!-- general------------------------------------------------------ -->
+        <section class="general">
+            <div class="container">
+                <div class="general__inner">
+                    <h2 class="general__title h2">Что такое генеральная уборка?</h2>
+                    <div class="general__body">
+                        <p class="general__text">Чтобы в Вашу жизнь пришло что-то новое и желанное, нужно непременно
+                            избавиться от чего-то старого, занимающего пространство. В глобальном смысле фраза
+                            генеральная уборка может быть применима не только к уборке традиционной - мойке полов,
+                            протиранию пыли, чистке сантехнике. Генеральная уборка - это наведение порядка в шкафах,
+                            комнатах, сумочке, мобильном телефоне, заметках и даже в голове. <br><br>
+
+                            Ментально, россияне склонны к накопительству и хранению каких-либо вещей на всякий случай.
+                            Признайтесь честно, Вы сами наверняка не раз оставляли какую то вещь, которой давно не
+                            пользовались с мыслями о том, что она может еще пригодиться.
+                            <br><br>
+                            Недаром каждый знает что такое легендарные "антресоли" и настоящий русский балкон.
+                        </p>
+                        <p class="general__text">Психологи рекомендуют очищать пространство минимум 2 раза в год. А с
+                            ненужными мыслями и убеждениями стараться прощаться и того раньше.
+                            <br><br>
+                            И если в работе со вторым мы разбираемся только по-любительски, то полная комплексная ген.
+                            уборка любых помещений жилых или нежилых - наша профессиональная деятельность.
+                            <br><br>
+                            Выполняя профессиональную генеральную уборку - наши специалисты залезут в каждый уголок.
+                            Даже тот уголок, который давно зарос 3-сантиметровым слоем пыли. Отодвинем плиту, вымоем под
+                            кухней, за диваном и на высоченном шкафу. Очистим застарелые загрязнения которые казалось
+                            устранить невозможно.
+                            <br><br>
+                            А мы умеем! Это просто поразительно, как чисто становится после того, как клининговая
+                            компания "Азбука Клининга" проведет полную комплексную уборку!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contain -->
+        <section class="contain">
+            <div class="container">
+                <div class="contain__inner">
+                    <h2 class="contain__title h2">Что входит в услугу</h2>
+                    <div class="contain__body">
+                        <div class="contain__slider swiper">
+                            <div class="contain__slider-wrapper swiper-wrapper">
+                                <div class="contain__slider-slide swiper-slide">
+                                    <div class="contain__slider-card">
+                                        <img src="img/contain.jpg" alt="" class="contain__slider-img">
+                                        <div class="contain__slider-circle contain__slider-circle--1">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--2">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--3">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--4">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--5">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--6">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--7">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contain__slider-slide swiper-slide">
+                                    <div class="contain__slider-card">
+                                        <img src="img/contain.jpg" alt="" class="contain__slider-img">
+                                        <div class="contain__slider-circle contain__slider-circle--1">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--2">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--3">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--4">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--5">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--6">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                        <div class="contain__slider-circle contain__slider-circle--7">
+                                            <div class="tooltiptext">
+                                                <h5 class="tooltiptext__title">Моем окна</h5>
+                                                <p class="tooltiptext__text">Моем все окна в квартире
+                                                    с внутренней и внешней стороны.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_15)">
+                                    <path d="M34.8335 22H9.16683" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.5 29.3333L9.16667 22" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.5 14.6665L9.16667 21.9998" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_7_15">
+                                        <rect width="44" height="44" fill="white" transform="matrix(-1 0 0 1 44 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_10)">
+                                    <path d="M9.16699 22H34.8337" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.5 29.3333L34.8333 22" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M27.5 14.6665L34.8333 21.9998" stroke="#343434" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_7_10">
+                                        <rect width="44" height="44" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- advantages--------------------------------------------------- -->
+        @@include('components/advantages/advantages.html',{
+        advantagesClass:'services',
+        advantagesBtn: true,
+        })
+
+
+
+        <!-- faq--------------------------------------------------- -->
+        @@include('components/faq/faq.html',{
+        mod:'main',
+        })
+
+        <!-- about--------------------------------------------------- -->
+        @@include('components/about/about.html',{
+        mod:'services',
+        cards: false,
+        })
+
+
+
+        <!-- contacts---------------------------------------------------------- -->
+        @@include('components/contacts/contacts.html',{
+        class:'services',
+        })
+
+
+        @@include('_footer.html')
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
